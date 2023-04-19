@@ -18,6 +18,14 @@
 		2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CA29EFAD1000150372 /* music_path2View.swift */; };
 		2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CC29EFAD4300150372 /* music_path3View.swift */; };
 		2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CE29EFAD5A00150372 /* music_path4View.swift */; };
+		C196A5BE29F090AB003DE1E7 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5BD29F090AB003DE1E7 /* Font.swift */; };
+		C196A5C029F090CB003DE1E7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5BF29F090CB003DE1E7 /* Color.swift */; };
+		C196A5C329F09145003DE1E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5C229F09145003DE1E7 /* LoginView.swift */; };
+		C196A5C529F09150003DE1E7 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5C429F09150003DE1E7 /* MainMenuView.swift */; };
+		C196A5C729F09169003DE1E7 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5C629F09169003DE1E7 /* InputFieldView.swift */; };
+		C196A5C929F09577003DE1E7 /* BitWise.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C196A5C829F09577003DE1E7 /* BitWise.ttf */; };
+		C196A5CB29F0957F003DE1E7 /* DigitalNumbers.otf in Resources */ = {isa = PBXBuildFile; fileRef = C196A5CA29F0957F003DE1E7 /* DigitalNumbers.otf */; };
+		C196A5CD29F09586003DE1E7 /* ModeSeven.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C196A5CC29F09586003DE1E7 /* ModeSeven.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,15 @@
 		2589C3CA29EFAD1000150372 /* music_path2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path2View.swift; sourceTree = "<group>"; };
 		2589C3CC29EFAD4300150372 /* music_path3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path3View.swift; sourceTree = "<group>"; };
 		2589C3CE29EFAD5A00150372 /* music_path4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path4View.swift; sourceTree = "<group>"; };
+		C196A5BD29F090AB003DE1E7 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		C196A5BF29F090CB003DE1E7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C196A5C129F090FD003DE1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C196A5C229F09145003DE1E7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C196A5C429F09150003DE1E7 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		C196A5C629F09169003DE1E7 /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		C196A5C829F09577003DE1E7 /* BitWise.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BitWise.ttf; sourceTree = "<group>"; };
+		C196A5CA29F0957F003DE1E7 /* DigitalNumbers.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigitalNumbers.otf; sourceTree = "<group>"; };
+		C196A5CC29F09586003DE1E7 /* ModeSeven.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ModeSeven.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +120,10 @@
 		2589C39A29EFAB3A00150372 /* PlanCS */ = {
 			isa = PBXGroup;
 			children = (
+				C196A5C129F090FD003DE1E7 /* Info.plist */,
 				2589C39B29EFAB3A00150372 /* PlanCSApp.swift */,
+				C196A5B929F09071003DE1E7 /* Views */,
+				C196A5BA29F09078003DE1E7 /* Helpers */,
 				2589C39D29EFAB3A00150372 /* ContentView.swift */,
 				2589C39F29EFAB3A00150372 /* Assets.xcassets */,
 				2589C3A129EFAB3A00150372 /* PlanCS.entitlements */,
@@ -139,6 +159,44 @@
 				2589C3B929EFAB3B00150372 /* PlanCSUITestsLaunchTests.swift */,
 			);
 			path = PlanCSUITests;
+			sourceTree = "<group>";
+		};
+		C196A5B929F09071003DE1E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C196A5C229F09145003DE1E7 /* LoginView.swift */,
+				C196A5C429F09150003DE1E7 /* MainMenuView.swift */,
+				C196A5C629F09169003DE1E7 /* InputFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C196A5BA29F09078003DE1E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C196A5BB29F0907F003DE1E7 /* Colors */,
+				C196A5BC29F0908C003DE1E7 /* Fonts */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C196A5BB29F0907F003DE1E7 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C196A5BF29F090CB003DE1E7 /* Color.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C196A5BC29F0908C003DE1E7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C196A5BD29F090AB003DE1E7 /* Font.swift */,
+				C196A5CC29F09586003DE1E7 /* ModeSeven.ttf */,
+				C196A5CA29F0957F003DE1E7 /* DigitalNumbers.otf */,
+				C196A5C829F09577003DE1E7 /* BitWise.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C196A5CB29F0957F003DE1E7 /* DigitalNumbers.otf in Resources */,
+				C196A5C929F09577003DE1E7 /* BitWise.ttf in Resources */,
 				2589C3A429EFAB3A00150372 /* Preview Assets.xcassets in Resources */,
+				C196A5CD29F09586003DE1E7 /* ModeSeven.ttf in Resources */,
 				2589C3A029EFAB3A00150372 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,10 +332,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C196A5C729F09169003DE1E7 /* InputFieldView.swift in Sources */,
+				C196A5C529F09150003DE1E7 /* MainMenuView.swift in Sources */,
 				2589C3C929EFACF900150372 /* music_path1View.swift in Sources */,
 				2589C39E29EFAB3A00150372 /* ContentView.swift in Sources */,
+				C196A5BE29F090AB003DE1E7 /* Font.swift in Sources */,
+				C196A5C329F09145003DE1E7 /* LoginView.swift in Sources */,
 				2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */,
 				2589C39C29EFAB3A00150372 /* PlanCSApp.swift in Sources */,
+				C196A5C029F090CB003DE1E7 /* Color.swift in Sources */,
 				2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */,
 				2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */,
 			);
@@ -433,6 +499,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PlanCS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanCS/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -469,6 +536,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PlanCS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanCS/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

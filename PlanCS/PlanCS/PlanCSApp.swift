@@ -11,7 +11,7 @@ import SwiftUI
 struct PlanCSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
