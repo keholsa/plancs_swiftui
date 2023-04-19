@@ -14,6 +14,10 @@
 		2589C3AE29EFAB3B00150372 /* PlanCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3AD29EFAB3B00150372 /* PlanCSTests.swift */; };
 		2589C3B829EFAB3B00150372 /* PlanCSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3B729EFAB3B00150372 /* PlanCSUITests.swift */; };
 		2589C3BA29EFAB3B00150372 /* PlanCSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3B929EFAB3B00150372 /* PlanCSUITestsLaunchTests.swift */; };
+		2589C3C929EFACF900150372 /* music_path1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3C829EFACF900150372 /* music_path1View.swift */; };
+		2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CA29EFAD1000150372 /* music_path2View.swift */; };
+		2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CC29EFAD4300150372 /* music_path3View.swift */; };
+		2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CE29EFAD5A00150372 /* music_path4View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		2589C3B329EFAB3B00150372 /* PlanCSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanCSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2589C3B729EFAB3B00150372 /* PlanCSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCSUITests.swift; sourceTree = "<group>"; };
 		2589C3B929EFAB3B00150372 /* PlanCSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2589C3C829EFACF900150372 /* music_path1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path1View.swift; sourceTree = "<group>"; };
+		2589C3CA29EFAD1000150372 /* music_path2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path2View.swift; sourceTree = "<group>"; };
+		2589C3CC29EFAD4300150372 /* music_path3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path3View.swift; sourceTree = "<group>"; };
+		2589C3CE29EFAD5A00150372 /* music_path4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path4View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				2589C39F29EFAB3A00150372 /* Assets.xcassets */,
 				2589C3A129EFAB3A00150372 /* PlanCS.entitlements */,
 				2589C3A229EFAB3A00150372 /* Preview Content */,
+				2589C3C829EFACF900150372 /* music_path1View.swift */,
+				2589C3CA29EFAD1000150372 /* music_path2View.swift */,
+				2589C3CC29EFAD4300150372 /* music_path3View.swift */,
+				2589C3CE29EFAD5A00150372 /* music_path4View.swift */,
 			);
 			path = PlanCS;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2589C3C929EFACF900150372 /* music_path1View.swift in Sources */,
 				2589C39E29EFAB3A00150372 /* ContentView.swift in Sources */,
+				2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */,
 				2589C39C29EFAB3A00150372 /* PlanCSApp.swift in Sources */,
+				2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */,
+				2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
