@@ -26,7 +26,7 @@ struct ForumsTopView: View {
                                 .font(.modeSeven20)
                                 .foregroundColor(.digiGreen)
                                 .padding(.leading, 10)
-                                .padding(.vertical, 8)
+                                .padding(.bottom, 16)
                                 .frame(width: 400, alignment: .leading)
                         }
                     }
@@ -37,29 +37,21 @@ struct ForumsTopView: View {
                 Spacer()
             }
             .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading:
-                HStack {
-                    Button(action : { self.mode.wrappedValue.dismiss() })
-                    {
-                        Text("<")
-                            .font(.modeSeven36)
-                            .foregroundColor(.digiGreen)
-                            .padding(.leading, 15)
-                    }
-                    
-                    Spacer()
-                    
+            .navigationBarItems(leading: Button(action : {
+                self.mode.wrappedValue.dismiss()
+            }){
+                Text("<")
+                    .font(.modeSeven36)
+                    .foregroundColor(.digiGreen)
+                    .padding(.leading, 15)
+            })
+            .toolbar {
+                ToolbarItem(placement: .principal) {
                     Text("Forums")
                         .font(.bitWise36)
                         .foregroundColor(.digiGreen)
-                
-                    NavigationLink(destination: CreateForumView(forumTitle: "String")) {
-                        Text("+")
-                            .font(.modeSeven36)
-                            .foregroundColor(.digiGreen)
-                    }
                 }
-            )
+            }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.black)
         }
