@@ -30,7 +30,7 @@ struct MainMenuView: View {
                                 .cornerRadius(25)
                         }
                         
-                        NavigationLink(destination: ForumsTopView()) {
+                        NavigationLink(destination: ForumsTopView().environmentObject(ForumModel())) {
                             VStack {
                                 Image("forumsImage")
                                     .foregroundColor(.digiGreen)
