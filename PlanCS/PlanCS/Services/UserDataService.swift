@@ -27,12 +27,9 @@ class UserDataService {
                 let userData = try decoder.decode([User].self, from: data)
                 
                 for u in userData {
-                    u.id = UUID()
                     
-//                    for i in u.localCalendarEvents {
-//                        i.id = UUID()
-//                    }
-                        
+                    u.id = UUID()
+
                 }
                 
                 return userData
@@ -47,6 +44,34 @@ class UserDataService {
         }
         
         return [User]()
+    }
+    
+    static func addUser(username:String, password:String) {
+        
+        let pathString = Bundle.main.path(forResource: "users", ofType: "json")
+        
+        guard pathString != nil else {
+            return
+        }
+        
+        let url = URL(fileURLWithPath: pathString!)
+        
+        var users = getLocalData()
+                
+        users.append(User(username: username, password: password))
+        
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+
+        do {
+            let data = try encoder.encode(users)
+            try data.write(to: url)
+            print(String(data: data, encoding: .utf8)!)
+        }
+        catch {
+            print(error)
+        }
+
     }
     
 }

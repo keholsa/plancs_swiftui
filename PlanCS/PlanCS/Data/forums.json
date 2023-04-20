@@ -1,7 +1,7 @@
 [
     {
-        "title": "Need help with Elites",
-        "description": "Elites are invading the Earth and we need to stop them.",
+        "title": "Need help with Covenant",
+        "description": "Covenant are invading the Earth and we need to stop them.",
         "poster": "Master Chief",
         "replies": [
             {"replyingUser": "John", "replyText": "Sign me up!"},
@@ -25,7 +25,7 @@
         "replies": [
             {"replyingUser": "Jenny", "replyText": "245!"},
             {"replyingUser": "Jared", "replyText": "How? It took me 387..."},
-            {"replyingUser": "John", "replyText": "I'll have to try later. Helping Master Chief with Elites at the moment."},
+            {"replyingUser": "John", "replyText": "I'll have to try later. Helping Master Chief with the Covenant at the moment."},
             {"replyingUser": "Jared", "replyText": "John is too busy playing video games apparently."}
         ]
     }

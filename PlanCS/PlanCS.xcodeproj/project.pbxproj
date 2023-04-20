@@ -21,7 +21,7 @@
 		C16464FC29F0B8D000988434 /* PomodoroTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16464FB29F0B8D000988434 /* PomodoroTimerView.swift */; };
 		C16464FE29F0B8E500988434 /* CalendarEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16464FD29F0B8E500988434 /* CalendarEventView.swift */; };
 		C164650129F0B8F500988434 /* ForumsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650029F0B8F500988434 /* ForumsTopView.swift */; };
-		C164650329F0B90200988434 /* SongSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650229F0B90200988434 /* SongSuggestionsView.swift */; };
+		C164650329F0B90200988434 /* MusicSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650229F0B90200988434 /* MusicSuggestionsView.swift */; };
 		C164650629F0BA6800988434 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650529F0BA6800988434 /* User.swift */; };
 		C164650B29F0BE5800988434 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = C164650A29F0BE5800988434 /* users.json */; };
 		C164650D29F0BEEF00988434 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650C29F0BEEF00988434 /* UserDataService.swift */; };
@@ -35,6 +35,10 @@
 		C164652029F0EDDA00988434 /* ForumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651F29F0EDDA00988434 /* ForumModel.swift */; };
 		C164652229F0F21400988434 /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652129F0F21400988434 /* ForumView.swift */; };
 		C164652429F0F27F00988434 /* CreateForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652329F0F27F00988434 /* CreateForumView.swift */; };
+		C164652629F1B8B900988434 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652529F1B8B900988434 /* UserModel.swift */; };
+		C164652829F1BC0100988434 /* CreateAccountPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652729F1BC0100988434 /* CreateAccountPopupView.swift */; };
+		C164652A29F1BC1600988434 /* WrongPasswordPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652929F1BC1600988434 /* WrongPasswordPopupView.swift */; };
+		C164652C29F1C3FB00988434 /* LoggedInSuccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652B29F1C3FB00988434 /* LoggedInSuccessPopupView.swift */; };
 		C196A5BE29F090AB003DE1E7 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5BD29F090AB003DE1E7 /* Font.swift */; };
 		C196A5C029F090CB003DE1E7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5BF29F090CB003DE1E7 /* Color.swift */; };
 		C196A5C329F09145003DE1E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5C229F09145003DE1E7 /* LoginView.swift */; };
@@ -81,7 +85,7 @@
 		C16464FB29F0B8D000988434 /* PomodoroTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerView.swift; sourceTree = "<group>"; };
 		C16464FD29F0B8E500988434 /* CalendarEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventView.swift; sourceTree = "<group>"; };
 		C164650029F0B8F500988434 /* ForumsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumsTopView.swift; sourceTree = "<group>"; };
-		C164650229F0B90200988434 /* SongSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSuggestionsView.swift; sourceTree = "<group>"; };
+		C164650229F0B90200988434 /* MusicSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSuggestionsView.swift; sourceTree = "<group>"; };
 		C164650529F0BA6800988434 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C164650A29F0BE5800988434 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		C164650C29F0BEEF00988434 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -95,6 +99,10 @@
 		C164651F29F0EDDA00988434 /* ForumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumModel.swift; sourceTree = "<group>"; };
 		C164652129F0F21400988434 /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
 		C164652329F0F27F00988434 /* CreateForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateForumView.swift; sourceTree = "<group>"; };
+		C164652529F1B8B900988434 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C164652729F1BC0100988434 /* CreateAccountPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountPopupView.swift; sourceTree = "<group>"; };
+		C164652929F1BC1600988434 /* WrongPasswordPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongPasswordPopupView.swift; sourceTree = "<group>"; };
+		C164652B29F1C3FB00988434 /* LoggedInSuccessPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInSuccessPopupView.swift; sourceTree = "<group>"; };
 		C196A5BD29F090AB003DE1E7 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		C196A5BF29F090CB003DE1E7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C196A5C129F090FD003DE1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -206,6 +214,9 @@
 				C164650F29F0C4A000988434 /* LoginFormView.swift */,
 				C164651429F0D5B900988434 /* EventTextBoxView.swift */,
 				C164651629F0DBFE00988434 /* TitleView.swift */,
+				C164652729F1BC0100988434 /* CreateAccountPopupView.swift */,
+				C164652929F1BC1600988434 /* WrongPasswordPopupView.swift */,
+				C164652B29F1C3FB00988434 /* LoggedInSuccessPopupView.swift */,
 			);
 			path = "Minor Views";
 			sourceTree = "<group>";
@@ -240,7 +251,7 @@
 		C16464FA29F0B86C00988434 /* Song Suggestion Views */ = {
 			isa = PBXGroup;
 			children = (
-				C164650229F0B90200988434 /* SongSuggestionsView.swift */,
+				C164650229F0B90200988434 /* MusicSuggestionsView.swift */,
 			);
 			path = "Song Suggestion Views";
 			sourceTree = "<group>";
@@ -276,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				C164651F29F0EDDA00988434 /* ForumModel.swift */,
+				C164652529F1B8B900988434 /* UserModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -458,15 +470,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C196A5C729F09169003DE1E7 /* InputFieldView.swift in Sources */,
-				C164650329F0B90200988434 /* SongSuggestionsView.swift in Sources */,
+				C164650329F0B90200988434 /* MusicSuggestionsView.swift in Sources */,
 				C196A5C529F09150003DE1E7 /* MainMenuView.swift in Sources */,
 				2589C3C929EFACF900150372 /* music_path1View.swift in Sources */,
+				C164652C29F1C3FB00988434 /* LoggedInSuccessPopupView.swift in Sources */,
 				C164650629F0BA6800988434 /* User.swift in Sources */,
 				C164652029F0EDDA00988434 /* ForumModel.swift in Sources */,
 				2589C39E29EFAB3A00150372 /* ContentView.swift in Sources */,
 				C196A5BE29F090AB003DE1E7 /* Font.swift in Sources */,
 				C164651D29F0ECBA00988434 /* ForumDataService.swift in Sources */,
 				C196A5C329F09145003DE1E7 /* LoginView.swift in Sources */,
+				C164652829F1BC0100988434 /* CreateAccountPopupView.swift in Sources */,
 				C164651529F0D5B900988434 /* EventTextBoxView.swift in Sources */,
 				C16464FE29F0B8E500988434 /* CalendarEventView.swift in Sources */,
 				2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */,
@@ -479,6 +493,8 @@
 				C16464FC29F0B8D000988434 /* PomodoroTimerView.swift in Sources */,
 				C164651029F0C4A000988434 /* LoginFormView.swift in Sources */,
 				C164651729F0DBFE00988434 /* TitleView.swift in Sources */,
+				C164652A29F1BC1600988434 /* WrongPasswordPopupView.swift in Sources */,
+				C164652629F1B8B900988434 /* UserModel.swift in Sources */,
 				2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */,
 				2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */,
 				C164650D29F0BEEF00988434 /* UserDataService.swift in Sources */,
@@ -634,9 +650,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PlanCS/PlanCS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlanCS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlanCS/Info.plist;
@@ -671,9 +689,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PlanCS/PlanCS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlanCS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlanCS/Info.plist;

@@ -8,45 +8,70 @@
 import SwiftUI
 
 struct PomodoroTimerView: View {
+    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+
     var body: some View {
-        VStack {
-            Text("Pomodoro\nTimer")
-                .font(Font.bitWise36)
-                .foregroundColor(.digiGreen)
-                .multilineTextAlignment(.center)
-            
-            Spacer()
-            
-            HStack {
-                Button() {
-                    
-                } label: {
-                    Text("Short Break")
-                }
-                .font(.modeSeven24)
-                .foregroundColor(.digiGreen)
-                .padding(.trailing, 40)
+        NavigationStack {
+            VStack {
+                Text("")
+                    .font(Font.bitWise36)
+                    .foregroundColor(.digiGreen)
+                    .multilineTextAlignment(.center)
                 
-                Button() {
+                Spacer()
+                
+                HStack {
+                    Button() {
+                        
+                    } label: {
+                        Text("Short Break")
+                    }
+                    .font(.modeSeven24)
+                    .foregroundColor(.digiGreen)
+                    .padding(.trailing, 40)
                     
-                } label: {
-                    Text("Long Break")
+                    Button() {
+                        
+                    } label: {
+                        Text("Long Break")
+                    }
+                    .font(.modeSeven24)
+                    .foregroundColor(.digiGreen)
                 }
-                .font(.modeSeven24)
-                .foregroundColor(.digiGreen)
+                
+                Spacer()
+                
+                Text("25:00")
+                    .font(.digitalNumbers64)
+                    .foregroundColor(.digiRed)
+                
+                Spacer()
+                Spacer()
             }
-            
-            Spacer()
-            
-            Text("25:00")
-                .font(.digitalNumbers64)
-                .foregroundColor(.digiRed)
-            
-            Spacer()
-            Spacer()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: Button(action : {
+                self.mode.wrappedValue.dismiss()
+            }){
+                Text("<")
+                    .font(.modeSeven36)
+                    .foregroundColor(.digiGreen)
+                    .padding(.leading, 15)
+            })
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        Text("Pomodoro Timer")
+                            .multilineTextAlignment(.center)
+                            .font(.bitWise36)
+                            .foregroundColor(.digiGreen)
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(.black)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.black)
     }
 }
 

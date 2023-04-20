@@ -58,7 +58,7 @@ struct MainMenuView: View {
                                 .cornerRadius(25)
                         }
                         
-                        NavigationLink(destination: SongSuggestionsView()) {
+                        NavigationLink(destination: MusicSuggestionsView()) {
                             VStack {
                                 Image("songsImage")
                                     .foregroundColor(.digiGreen)
