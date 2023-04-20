@@ -19,10 +19,13 @@ struct ForumsTopView: View {
             VStack {
                 
                 Grid(alignment: .leading) {
-                    ForEach(0..<model.forums.count) { i in
+//                    ForEach(0..<model.forums.count) { i in
                         
-                        NavigationLink(destination: ForumView(forum: $model.forums[i])) {
-                            Text(model.forums[i].title)
+  //                      NavigationLink(destination: ForumView(forum: $model.forums[i])) {
+                    ForEach(model.forums) { forum in
+                        NavigationLink(destination: ForumView(forum: Binding(get: { forum }, set: { _ in }))) {
+                            Text(forum.title)
+                            //Text(model.forums[i].title)
                                 .font(.modeSeven20)
                                 .foregroundColor(.digiGreen)
                                 .padding(.leading, 10)
@@ -50,6 +53,13 @@ struct ForumsTopView: View {
                     Text("Forums")
                         .font(.bitWise36)
                         .foregroundColor(.digiGreen)
+
+                NavigationLink(destination: CreateForumView(forumTitle: "", onPost: { newForum in model.forums.append(newForum)}).environmentObject(model)) {
+                        Text("+")
+                            .font(.modeSeven36)
+                            .foregroundColor(.digiGreen)
+                    }
+
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

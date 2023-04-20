@@ -14,6 +14,14 @@ class Forum: Identifiable, Decodable {
     var description:String
     var poster:String
     var replies:[ForumPostReply]?
+
+    init(id: UUID? = UUID(), title: String, description: String, poster: String, replies: [ForumPostReply]? = []) {
+        self.id = id
+        self.title = title
+        self.description = description
+        self.poster = poster
+        self.replies = replies
+    }
     
 }
 
