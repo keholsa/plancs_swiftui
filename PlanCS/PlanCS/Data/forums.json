@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Need help with Elites",
+        "description": "Elites are invading the Earth and we need to stop them.",
+        "poster": "Master Chief",
+        "replies": [
+            {"replyingUser": "John", "replyText": "Sign me up!"},
+            {"replyingUser": "Jake", "replyText": "Absolutely not. Good luck with your fight."}
+        ]
+    },
+    {
+        "title": "This program is hard",
+        "description": "Can someone complete this assignment for me?",
+        "poster": "Jack",
+        "replies": [
+            {"replyingUser": "Jacob", "replyText": "Don't be lazy."},
+            {"replyingUser": "Jane", "replyText": "No, git gud."},
+            {"replyingUser": "Jenna", "replyText": "Sure. Send me $100 in BitCoin and I'll get it done for you."}
+        ]
+    },
+    {
+        "title": "Challenge! Program Length...",
+        "description": "This is a challenge. How many lines of code does it take for you to accomplish the same thing? I did it in only 253",
+        "poster": "Jennifer",
+        "replies": [
+            {"replyingUser": "Jenny", "replyText": "245!"},
+            {"replyingUser": "Jared", "replyText": "How? It took me 387..."},
+            {"replyingUser": "John", "replyText": "I'll have to try later. Helping Master Chief with Elites at the moment."},
+            {"replyingUser": "Jared", "replyText": "John is too busy playing video games apparently."}
+        ]
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "username": "John",
+        "password": "1234"
+    },
+    {
+        "username": "Johnny",
+        "password": "2345"
+    },
+    {
+        "username": "Jim",
+        "password": "3456"
+    },
+    {
+        "username": "Jimmy",
+        "password": "4567"
+    },
+    {
+        "username": "Jimothy",
+        "password": "5678"
+    },
+    {
+        "username": "Jared",
+        "password": "6789"
+    },
+    {
+        "username": "Jake",
+        "password": "password"
+    },
+    {
+        "username": "Jacob",
+        "password": "password1"
+    },
+    {
+        "username": "Jack",
+        "password": "password2"
+    },
+    {
+        "username": "Master Chief",
+        "password": "iamaspartan"
+    },
+    {
+        "username": "Jane",
+        "password": "password4"
+    },
+    {
+        "username": "Julie",
+        "password": "password5"
+    },
+    {
+        "username": "Julia",
+        "password": "password6"
+    },
+    {
+        "username": "Jessica",
+        "password": "password7"
+    },
+    {
+        "username": "Jessie",
+        "password": "password8"
+    },
+    {
+        "username": "Jenny",
+        "password": "password9"
+    },
+    {
+        "username": "Jennifer",
+        "password": "password10"
+    },
+    {
+        "username": "Jennette",
+        "password": "password11"
+    },
+    {
+        "username": "Jenna",
+        "password": "password12"
+    },
+    {
+        "username": "Master Hacker",
+        "password": "1337"
+    }
+]

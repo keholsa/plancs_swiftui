@@ -11,70 +11,54 @@ struct LoginView: View {
     
     @State var username:String = ""
     @State var password:String = ""
-    
+
     var body: some View {
         
         ZStack {
-            NavigationView {
+            NavigationStack {
                 VStack {
-                    Text("Plan CS")
-                        .font(Font.bitWise36)
-                        .foregroundColor(.digiGreen)
-                    
+//                    Text("PlanCS")
+//                        .font(Font.bitWise36)
+//                        .foregroundColor(.digiGreen)
+//
                     Spacer()
-                    
-                    Text("Create \naccount/login")
+//
+                    Text("Create\naccount/login")
                         .font(.modeSeven28)
                         .foregroundColor(.digiGreen)
                         .multilineTextAlignment(.center)
                         .padding(.vertical)
                     
                     VStack(alignment: .trailing) {
-                        VStack(alignment: .leading) {
-                            
-                            Text("Username")
-                                .font(.modeSeven24)
-                                .foregroundColor(.digiGreen)
-                                .padding(.leading, 10.0)
-                                .padding(.vertical, -7)
-                            
-                            InputFieldView(inputField: $username)
-                                .padding(.bottom)
-                            
-                            Text("Password")
-                                .font(.modeSeven24)
-                                .foregroundColor(.digiGreen)
-                                .padding(.leading, 10.0)
-                                .padding(.bottom, -7)
-                            
-                            InputFieldView(inputField: $password)
-                            
-                        }
-                        .padding(.bottom, 40)
+
+                        LoginFormView(username: $username, password: $password)
+                            .padding(.bottom, 40)
                         
-                        Button() {
-                            
-                        } label: {
+                        NavigationLink(destination: MainMenuView()) {
                             Text("Login")
+                                .frame(width: 112, height: 40)
+                                .font(.bitWise24)
+                                .background(Color.digiGray)
+                                .cornerRadius(15)
+                                .foregroundColor(.digiGreen)
                         }
-                        .frame(width: 112, height: 40)
-                        .font(.bitWise24)
-                        .background(Color.digiGray)
-                        .cornerRadius(15)
-                        .foregroundColor(.digiGreen)
                         
-                        Button() {
-                            
-                        } label: {
+                        NavigationLink(destination: MainMenuView()) {
                             Text("Continue as guest")
-                            
+                                .frame(width: 180, height: 30)
+                                .font(.bitWise16)
+                                .background(Color.digiGray)
+                                .cornerRadius(15.0)
+                                .foregroundColor(.digiGreen)
+                                .padding(.top, 72)
                         }
-                        .frame(width: 180, height: 30)
-                        .font(.bitWise16)
-                        .background(Color.digiGray)
-                        .cornerRadius(15.0)
-                        .foregroundColor(.digiGreen)
-                        .padding(.top, 60)
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                Text("PlanCS")
+                                    .font(.bitWise36)
+                                    .foregroundColor(.digiGreen)
+                            }
+                        }
                     }
                     .frame(width: 266)
                     

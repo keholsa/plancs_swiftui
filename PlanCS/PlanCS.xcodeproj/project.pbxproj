@@ -18,6 +18,23 @@
 		2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CA29EFAD1000150372 /* music_path2View.swift */; };
 		2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CC29EFAD4300150372 /* music_path3View.swift */; };
 		2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C3CE29EFAD5A00150372 /* music_path4View.swift */; };
+		C16464FC29F0B8D000988434 /* PomodoroTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16464FB29F0B8D000988434 /* PomodoroTimerView.swift */; };
+		C16464FE29F0B8E500988434 /* CalendarEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16464FD29F0B8E500988434 /* CalendarEventView.swift */; };
+		C164650129F0B8F500988434 /* ForumsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650029F0B8F500988434 /* ForumsTopView.swift */; };
+		C164650329F0B90200988434 /* SongSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650229F0B90200988434 /* SongSuggestionsView.swift */; };
+		C164650629F0BA6800988434 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650529F0BA6800988434 /* User.swift */; };
+		C164650B29F0BE5800988434 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = C164650A29F0BE5800988434 /* users.json */; };
+		C164650D29F0BEEF00988434 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650C29F0BEEF00988434 /* UserDataService.swift */; };
+		C164651029F0C4A000988434 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164650F29F0C4A000988434 /* LoginFormView.swift */; };
+		C164651329F0D56900988434 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651229F0D56900988434 /* CalendarView.swift */; };
+		C164651529F0D5B900988434 /* EventTextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651429F0D5B900988434 /* EventTextBoxView.swift */; };
+		C164651729F0DBFE00988434 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651629F0DBFE00988434 /* TitleView.swift */; };
+		C164651929F0E70900988434 /* forums.json in Resources */ = {isa = PBXBuildFile; fileRef = C164651829F0E70900988434 /* forums.json */; };
+		C164651B29F0E73600988434 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651A29F0E73600988434 /* Forum.swift */; };
+		C164651D29F0ECBA00988434 /* ForumDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651C29F0ECBA00988434 /* ForumDataService.swift */; };
+		C164652029F0EDDA00988434 /* ForumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164651F29F0EDDA00988434 /* ForumModel.swift */; };
+		C164652229F0F21400988434 /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652129F0F21400988434 /* ForumView.swift */; };
+		C164652429F0F27F00988434 /* CreateForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164652329F0F27F00988434 /* CreateForumView.swift */; };
 		C196A5BE29F090AB003DE1E7 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5BD29F090AB003DE1E7 /* Font.swift */; };
 		C196A5C029F090CB003DE1E7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5BF29F090CB003DE1E7 /* Color.swift */; };
 		C196A5C329F09145003DE1E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196A5C229F09145003DE1E7 /* LoginView.swift */; };
@@ -61,6 +78,23 @@
 		2589C3CA29EFAD1000150372 /* music_path2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path2View.swift; sourceTree = "<group>"; };
 		2589C3CC29EFAD4300150372 /* music_path3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path3View.swift; sourceTree = "<group>"; };
 		2589C3CE29EFAD5A00150372 /* music_path4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_path4View.swift; sourceTree = "<group>"; };
+		C16464FB29F0B8D000988434 /* PomodoroTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerView.swift; sourceTree = "<group>"; };
+		C16464FD29F0B8E500988434 /* CalendarEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventView.swift; sourceTree = "<group>"; };
+		C164650029F0B8F500988434 /* ForumsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumsTopView.swift; sourceTree = "<group>"; };
+		C164650229F0B90200988434 /* SongSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSuggestionsView.swift; sourceTree = "<group>"; };
+		C164650529F0BA6800988434 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C164650A29F0BE5800988434 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		C164650C29F0BEEF00988434 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		C164650F29F0C4A000988434 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		C164651229F0D56900988434 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		C164651429F0D5B900988434 /* EventTextBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTextBoxView.swift; sourceTree = "<group>"; };
+		C164651629F0DBFE00988434 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		C164651829F0E70900988434 /* forums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forums.json; sourceTree = "<group>"; };
+		C164651A29F0E73600988434 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		C164651C29F0ECBA00988434 /* ForumDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDataService.swift; sourceTree = "<group>"; };
+		C164651F29F0EDDA00988434 /* ForumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumModel.swift; sourceTree = "<group>"; };
+		C164652129F0F21400988434 /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
+		C164652329F0F27F00988434 /* CreateForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateForumView.swift; sourceTree = "<group>"; };
 		C196A5BD29F090AB003DE1E7 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		C196A5BF29F090CB003DE1E7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C196A5C129F090FD003DE1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -122,8 +156,12 @@
 			children = (
 				C196A5C129F090FD003DE1E7 /* Info.plist */,
 				2589C39B29EFAB3A00150372 /* PlanCSApp.swift */,
+				C164650429F0BA5B00988434 /* Models */,
+				C164651E29F0EDC300988434 /* ViewModels */,
 				C196A5B929F09071003DE1E7 /* Views */,
 				C196A5BA29F09078003DE1E7 /* Helpers */,
+				C164650E29F0BEF300988434 /* Services */,
+				C164650729F0BB3300988434 /* Data */,
 				2589C39D29EFAB3A00150372 /* ContentView.swift */,
 				2589C39F29EFAB3A00150372 /* Assets.xcassets */,
 				2589C3A129EFAB3A00150372 /* PlanCS.entitlements */,
@@ -161,12 +199,97 @@
 			path = PlanCSUITests;
 			sourceTree = "<group>";
 		};
+		C16464F629F0B70400988434 /* Minor Views */ = {
+			isa = PBXGroup;
+			children = (
+				C196A5C629F09169003DE1E7 /* InputFieldView.swift */,
+				C164650F29F0C4A000988434 /* LoginFormView.swift */,
+				C164651429F0D5B900988434 /* EventTextBoxView.swift */,
+				C164651629F0DBFE00988434 /* TitleView.swift */,
+			);
+			path = "Minor Views";
+			sourceTree = "<group>";
+		};
+		C16464F729F0B85100988434 /* Pomodoro Timer Views */ = {
+			isa = PBXGroup;
+			children = (
+				C16464FB29F0B8D000988434 /* PomodoroTimerView.swift */,
+			);
+			path = "Pomodoro Timer Views";
+			sourceTree = "<group>";
+		};
+		C16464F829F0B85D00988434 /* Calendar Views */ = {
+			isa = PBXGroup;
+			children = (
+				C16464FD29F0B8E500988434 /* CalendarEventView.swift */,
+				C164651229F0D56900988434 /* CalendarView.swift */,
+			);
+			path = "Calendar Views";
+			sourceTree = "<group>";
+		};
+		C16464F929F0B86500988434 /* Forum Views */ = {
+			isa = PBXGroup;
+			children = (
+				C164650029F0B8F500988434 /* ForumsTopView.swift */,
+				C164652129F0F21400988434 /* ForumView.swift */,
+				C164652329F0F27F00988434 /* CreateForumView.swift */,
+			);
+			path = "Forum Views";
+			sourceTree = "<group>";
+		};
+		C16464FA29F0B86C00988434 /* Song Suggestion Views */ = {
+			isa = PBXGroup;
+			children = (
+				C164650229F0B90200988434 /* SongSuggestionsView.swift */,
+			);
+			path = "Song Suggestion Views";
+			sourceTree = "<group>";
+		};
+		C164650429F0BA5B00988434 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C164650529F0BA6800988434 /* User.swift */,
+				C164651A29F0E73600988434 /* Forum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C164650729F0BB3300988434 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C164650A29F0BE5800988434 /* users.json */,
+				C164651829F0E70900988434 /* forums.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C164650E29F0BEF300988434 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C164650C29F0BEEF00988434 /* UserDataService.swift */,
+				C164651C29F0ECBA00988434 /* ForumDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C164651E29F0EDC300988434 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C164651F29F0EDDA00988434 /* ForumModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C196A5B929F09071003DE1E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C196A5C229F09145003DE1E7 /* LoginView.swift */,
 				C196A5C429F09150003DE1E7 /* MainMenuView.swift */,
-				C196A5C629F09169003DE1E7 /* InputFieldView.swift */,
+				C16464F829F0B85D00988434 /* Calendar Views */,
+				C16464F929F0B86500988434 /* Forum Views */,
+				C16464F729F0B85100988434 /* Pomodoro Timer Views */,
+				C16464FA29F0B86C00988434 /* Song Suggestion Views */,
+				C16464F629F0B70400988434 /* Minor Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +430,8 @@
 				C196A5C929F09577003DE1E7 /* BitWise.ttf in Resources */,
 				2589C3A429EFAB3A00150372 /* Preview Assets.xcassets in Resources */,
 				C196A5CD29F09586003DE1E7 /* ModeSeven.ttf in Resources */,
+				C164650B29F0BE5800988434 /* users.json in Resources */,
+				C164651929F0E70900988434 /* forums.json in Resources */,
 				2589C3A029EFAB3A00150372 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,16 +458,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C196A5C729F09169003DE1E7 /* InputFieldView.swift in Sources */,
+				C164650329F0B90200988434 /* SongSuggestionsView.swift in Sources */,
 				C196A5C529F09150003DE1E7 /* MainMenuView.swift in Sources */,
 				2589C3C929EFACF900150372 /* music_path1View.swift in Sources */,
+				C164650629F0BA6800988434 /* User.swift in Sources */,
+				C164652029F0EDDA00988434 /* ForumModel.swift in Sources */,
 				2589C39E29EFAB3A00150372 /* ContentView.swift in Sources */,
 				C196A5BE29F090AB003DE1E7 /* Font.swift in Sources */,
+				C164651D29F0ECBA00988434 /* ForumDataService.swift in Sources */,
 				C196A5C329F09145003DE1E7 /* LoginView.swift in Sources */,
+				C164651529F0D5B900988434 /* EventTextBoxView.swift in Sources */,
+				C16464FE29F0B8E500988434 /* CalendarEventView.swift in Sources */,
 				2589C3CB29EFAD1000150372 /* music_path2View.swift in Sources */,
+				C164650129F0B8F500988434 /* ForumsTopView.swift in Sources */,
 				2589C39C29EFAB3A00150372 /* PlanCSApp.swift in Sources */,
+				C164651329F0D56900988434 /* CalendarView.swift in Sources */,
+				C164652429F0F27F00988434 /* CreateForumView.swift in Sources */,
 				C196A5C029F090CB003DE1E7 /* Color.swift in Sources */,
+				C164652229F0F21400988434 /* ForumView.swift in Sources */,
+				C16464FC29F0B8D000988434 /* PomodoroTimerView.swift in Sources */,
+				C164651029F0C4A000988434 /* LoginFormView.swift in Sources */,
+				C164651729F0DBFE00988434 /* TitleView.swift in Sources */,
 				2589C3CF29EFAD5A00150372 /* music_path4View.swift in Sources */,
 				2589C3CD29EFAD4300150372 /* music_path3View.swift in Sources */,
+				C164650D29F0BEEF00988434 /* UserDataService.swift in Sources */,
+				C164651B29F0E73600988434 /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
