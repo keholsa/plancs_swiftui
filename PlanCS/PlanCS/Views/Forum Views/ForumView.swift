@@ -86,6 +86,7 @@ struct ForumView: View {
 //            .foregroundColor(.digiGreen)
 //            .padding(.vertical, 24)
         }
+        .padding(.leading, 20)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading:
             Button(action : { self.mode.wrappedValue.dismiss() })

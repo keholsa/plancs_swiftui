@@ -9,32 +9,36 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @EnvironmentObject var model: UserModel
+
     @State var username:String = ""
     @State var password:String = ""
+    
+    // 0 = base state; 1 = user found/login; 2 = wrong password; 3 = user not found
+    @State var loginState:Int = 0
+    
 
     var body: some View {
         
-        ZStack {
-            NavigationStack {
+        NavigationStack {
+            ZStack {
                 VStack {
-//                    Text("PlanCS")
-//                        .font(Font.bitWise36)
-//                        .foregroundColor(.digiGreen)
-//
-                    Spacer()
-//
+                    
                     Text("Create\naccount/login")
                         .font(.modeSeven28)
                         .foregroundColor(.digiGreen)
                         .multilineTextAlignment(.center)
-                        .padding(.vertical)
+                        .padding(.bottom)
+                        .padding(.top, 140)
                     
                     VStack(alignment: .trailing) {
 
                         LoginFormView(username: $username, password: $password)
                             .padding(.bottom, 40)
                         
-                        NavigationLink(destination: MainMenuView()) {
+                        Button() {
+                            loginState = UserModel.getUser(users: model.users, username: username, password: password)
+                        } label: {
                             Text("Login")
                                 .frame(width: 112, height: 40)
                                 .font(.bitWise24)
@@ -42,7 +46,7 @@ struct LoginView: View {
                                 .cornerRadius(15)
                                 .foregroundColor(.digiGreen)
                         }
-                        
+                        Spacer()
                         NavigationLink(destination: MainMenuView()) {
                             Text("Continue as guest")
                                 .frame(width: 180, height: 30)
@@ -50,8 +54,9 @@ struct LoginView: View {
                                 .background(Color.digiGray)
                                 .cornerRadius(15.0)
                                 .foregroundColor(.digiGreen)
-                                .padding(.top, 72)
+//                                .padding(.top, 72)
                         }
+                        .navigationBarTitleDisplayMode(.inline)
                         .toolbar {
                             ToolbarItem(placement: .principal) {
                                 Text("PlanCS")
@@ -59,16 +64,30 @@ struct LoginView: View {
                                     .foregroundColor(.digiGreen)
                             }
                         }
+                        
+                        Spacer()
+                        Spacer()
                     }
                     .frame(width: 266)
                     
-                    Spacer()
-                    Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(.black)
+                
+                if loginState == 1 {
+                    LoggedInSuccessPopupView(state: $loginState)
+                }
+                
+                else if loginState == 2 {
+                    WrongPasswordPopupView(state: $loginState)
+                }
+                
+                else if loginState == 3 {
+                    CreateAccountPopupView(state: $loginState, username: $username, password: $password)
+                }
             }
         }
+        .environmentObject(ForumModel())
     }
 }
 
