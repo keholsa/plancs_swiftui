@@ -31,4 +31,9 @@ class ForumPostReply: Identifiable, Decodable {
     var replyingUser:String
     var replyText:String
     
+    init(id: UUID? = UUID(), replyingUser: String, replyText: String) {
+        self.id = id
+        self.replyingUser = replyingUser
+        self.replyText = replyText
+    }
 }
