@@ -13,6 +13,7 @@ struct ForumView: View {
 
 //    @EnvironmentObject var forum:Forum
     @State var title:String = "Forums"
+    @State private var commentText: String = ""
     
     @Binding var forum:Forum
     
@@ -31,26 +32,58 @@ struct ForumView: View {
             
             if let replies = forum.replies {
                 LazyVGrid(columns: [GridItem(spacing: 0)], alignment: .leading, spacing: 15) {
-                    ForEach(0..<replies.count) { i in
-                        Text("\(replies[i].replyingUser): \(replies[i].replyText)")
-                            .font(.modeSeven20)
-                            .foregroundColor(.digiGreen)
+                    ForEach(replies) { reply in
+                                Text("\(reply.replyingUser): \(reply.replyText)")
+                                    .font(.modeSeven20)
+                                    .foregroundColor(.digiGreen)
+//                    ForEach(0..<replies.count) { i in
+//                        Text("\(replies[i].replyingUser): \(replies[i].replyText)")
+//                            .font(.modeSeven20)
+//                            .foregroundColor(.digiGreen)
                     }
                 }
             }
             
             Spacer()
-            
-            Button() {
+            VStack {
+                TextField("write your comment", text: $commentText, onCommit: {
+                    if !commentText.isEmpty {
+                        let newReply = ForumPostReply(replyingUser: "User", replyText: commentText)
+                        forum.replies?.append(newReply)
+                        commentText = ""
+                    }
+                })
+                .font(.modeSeven20)
+                .foregroundColor(.digiGreen)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.trailing, 8)
                 
-            } label: {
-                Text("Add comment")
+                Button(action: {
+                    if !commentText.isEmpty {
+                        let newReply = ForumPostReply(replyingUser: "User", replyText: commentText)
+                        forum.replies?.append(newReply)
+                        commentText = ""
+                    }
+                }) {
+                    Text("Add comment")
+                }
+                .frame(width: 240, height: 48)
+                .font(.bitWise24)
+                .background(Color.digiGray)
+                .cornerRadius(32)
+                .foregroundColor(.digiGreen)
             }
-            .frame(width: 240, height: 48)
-            .font(.bitWise24)
-            .background(Color.digiGray)
-            .cornerRadius(32)
-            .foregroundColor(.digiGreen)
+            .padding(.bottom, 24)
+//            Button() {
+//
+//            } label: {
+//                Text("Add comment")
+//            }
+//            .frame(width: 240, height: 48)
+//            .font(.bitWise24)
+//            .background(Color.digiGray)
+//            .cornerRadius(32)
+//            .foregroundColor(.digiGreen)
 //            .padding(.vertical, 24)
         }
         .padding(.leading, 20)

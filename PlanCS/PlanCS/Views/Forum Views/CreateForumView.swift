@@ -65,6 +65,22 @@ struct CreateForumView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.black)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button(action : { self.presentationMode.wrappedValue.dismiss() }) {
+                Text("<")
+                    .font(.modeSeven36)
+                    .foregroundColor(.digiGreen)
+                    .padding(.leading, 15)
+                }
+            )
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Create Forum")
+                    .font(.bitWise36)
+                    .foregroundColor(.digiGreen)
+            }
+        }
     }
 }
 
