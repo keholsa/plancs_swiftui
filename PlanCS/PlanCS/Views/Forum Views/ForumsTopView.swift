@@ -53,13 +53,14 @@ struct ForumsTopView: View {
                     Text("Forums")
                         .font(.bitWise36)
                         .foregroundColor(.digiGreen)
-
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink(destination: CreateForumView(forumTitle: "", onPost: { newForum in model.forums.append(newForum)}).environmentObject(model)) {
                         Text("+")
                             .font(.modeSeven36)
                             .foregroundColor(.digiGreen)
+                            .padding(.trailing, 15)
                     }
-
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
