@@ -46,7 +46,9 @@ struct LoginView: View {
                                 .cornerRadius(15)
                                 .foregroundColor(.digiGreen)
                         }
+                        
                         Spacer()
+                        
                         NavigationLink(destination: MainMenuView()) {
                             Text("Continue as guest")
                                 .frame(width: 180, height: 30)

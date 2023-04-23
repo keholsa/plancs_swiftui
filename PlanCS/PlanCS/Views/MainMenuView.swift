@@ -17,10 +17,12 @@ struct MainMenuView: View {
                 Grid(alignment: .center, horizontalSpacing: 24, verticalSpacing: 24) {
                     
                     GridRow {
-                        NavigationLink(destination: CalendarEventView()) {
+                        NavigationLink(destination: CalendarEventListView()) {
                             VStack {
                                 Image("calendarImage")
+                                    .resizable()
                                     .foregroundColor(.digiGreen)
+                                    .frame(width: 100, height: 100)
                                 Text("Calendar")
                                     .foregroundColor(.white)
                             }
@@ -33,7 +35,9 @@ struct MainMenuView: View {
                         NavigationLink(destination: ForumsTopView().environmentObject(ForumModel())) {
                             VStack {
                                 Image("forumsImage")
+                                    .resizable()
                                     .foregroundColor(.digiGreen)
+                                    .frame(width: 100, height: 100)
                                 Text("Forums")
                                     .foregroundColor(.white)
                             }
@@ -48,7 +52,9 @@ struct MainMenuView: View {
                         NavigationLink(destination: PomodoroTimerView()) {
                             VStack {
                                 Image("timerImage")
+                                    .resizable()
                                     .foregroundColor(.digiGreen)
+                                    .frame(width: 100, height: 100)
                                 Text("Pomodoro\nTimer")
                                     .foregroundColor(.white)
                             }
@@ -61,7 +67,9 @@ struct MainMenuView: View {
                         NavigationLink(destination: MusicSuggestionsView()) {
                             VStack {
                                 Image("songsImage")
+                                    .resizable()
                                     .foregroundColor(.digiGreen)
+                                    .frame(width: 100, height: 100)
                                 Text("Song\nSuggestions")
                                     .foregroundColor(.white)
                             }

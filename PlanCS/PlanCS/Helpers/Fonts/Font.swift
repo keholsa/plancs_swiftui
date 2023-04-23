@@ -11,7 +11,7 @@ import SwiftUI
 extension Font {
     
     public static var digitalNumbers64: Font {
-        return Font.custom("DigitalNumbers", size: 64)
+        return Font.custom("DigitalDismay", size: 128)
     }
     
     public static var bitWise36: Font {
