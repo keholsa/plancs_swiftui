@@ -64,7 +64,7 @@ struct MainMenuView: View {
                                 .cornerRadius(25)
                         }
                         
-                        NavigationLink(destination: MusicSuggestionsView()) {
+                        NavigationLink(destination: SelectionView()) {
                             VStack {
                                 Image("songsImage")
                                     .resizable()
