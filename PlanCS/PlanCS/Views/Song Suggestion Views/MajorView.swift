@@ -15,26 +15,28 @@ struct MajorView: View {
     
     var body: some View {
         
-        NavigationView{
-        VStack{
-            
-            Text("Music\nSuggestion")
-            //change to modeseven
-                .font(.title)
-            //change to digigreen
-                .foregroundColor(.green)
-                .multilineTextAlignment(.center)
-            
-            
-            
-            //TODO: Fix position on import
-            Text("Search for a suggestion by:")
-            //change to modeseven
-                .font(.headline)
-            //change to digigreen
-                .foregroundColor(.green)
+        NavigationStack{
+            VStack{
                 
-            
+                Text("Music\nSuggestion")
+                //change to modeseven
+                    .font(.modeSeven36)
+                //change to digigreen
+                    .foregroundColor(.digiGreen)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+                //TODO: Fix position on import
+                Text("Search for a suggestion by:")
+                //change to modeseven
+                    .font(.modeSeven20)
+                //change to digigreen
+                    .foregroundColor(.digiGreen)
+                    .padding(.top, 10)
+                    .padding(.bottom, -100)
+                
+                
                 VStack {
                     Spacer()
                     ForEach(0..<3) { rowIndex in
@@ -42,23 +44,24 @@ struct MajorView: View {
                             ForEach(0..<2){ colIndex in
                                 VStack(alignment: .center){
                                     NavigationLink(destination: SongView(optionVal: majorImageArr[rowIndex * 2 + colIndex])){
-                                        Image(majorImageArr[rowIndex * 2 + colIndex])
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 135, height: 75)
-                                            .padding(7)
-                                        Text(majorNameArr[rowIndex * 2 + colIndex])
+                                        VStack{
+                                            Image(majorImageArr[rowIndex * 2 + colIndex])
+                                            
+                                            Text(majorNameArr[rowIndex * 2 + colIndex])
+                                            
+                                            //change font to mode seven
+                                                .font(.modeSeven24)
+                                                .foregroundColor(.white)
+                                        }
+                                        .frame(width: 165, height:130)
+                                        .background(Color(UIColor(hex: "#202020")!))                   .cornerRadius(10)
+                                        .padding(.bottom, 50)
                                         
-                                        //change font to mode seven
-                                            .font(.system(size:24))
-                                            .foregroundColor(.white)
-                                            .multilineTextAlignment(.center)
-                                            .frame(width: 135)
                                     }
+                                    
+                                    
                                 }
-                                .background(Color.gray)
-                                .frame(width: 180, height: 220)
-                                .cornerRadius(120)
+                                
                             }
                         }
                         .padding(.bottom, -35)
@@ -68,14 +71,11 @@ struct MajorView: View {
                 }
             }
             
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
         }
         
-
     }
-    
-    
 }
     
 

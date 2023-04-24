@@ -292,10 +292,10 @@
 			children = (
 				055B30B029F5EF8400876394 /* SelectionView.swift */,
 				055B30B229F5F07000876394 /* GenreView.swift */,
-				055B30BE29F5F16400876394 /* edm_data.swift */,
-				055B30B429F5F08800876394 /* SongView.swift */,
-				055B30C029F5F16F00876394 /* lofi_data.swift */,
 				055B30B629F5F0A200876394 /* MajorView.swift */,
+				055B30B429F5F08800876394 /* SongView.swift */,
+				055B30BE29F5F16400876394 /* edm_data.swift */,
+				055B30C029F5F16F00876394 /* lofi_data.swift */,
 				055B30B829F5F0F200876394 /* country_data.swift */,
 				055B30BA29F5F12700876394 /* classical_data.swift */,
 				055B30C229F5F18600876394 /* metal_data.swift */,

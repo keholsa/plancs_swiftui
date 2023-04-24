@@ -20,19 +20,20 @@ struct SelectionView: View {
             
             Text("Music\nSuggestion")
             //change to modeseven
-                .font(.title)
+                .font(.modeSeven36)
             //change to digigreen
-                .foregroundColor(.green)
+                .foregroundColor(.digiGreen)
                 .multilineTextAlignment(.center)
-        
+                .padding(.bottom,60)
         
             //obj
             Text("Search for a suggestion by:")
                 
             //change to modeseven
-                .font(.headline)
+                .font(.modeSeven20)
             //change to digigreen
-                .foregroundColor(.green)
+                .foregroundColor(.digiGreen)
+                .padding(.bottom,50)
             
                 
             
@@ -40,29 +41,42 @@ struct SelectionView: View {
                     NavigationLink(destination: GenreView()){
                         VStack{
                             Image("genre_header")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 150, height: 100)
+                            
                             Text("Genre")
                             //change to modeseven
-                                .font(.title)
+                                .font(.modeSeven28)
                             //change to digigreen
-                                .foregroundColor(.green)
+                                .foregroundColor(.white)
                         }
                         
                         //change to D9D9D9
-                        .background(.gray)
-                    }
+                        .background(Color(UIColor(hex: "#202020")!))                    }
+                    .cornerRadius(10)
                     
                     
                     NavigationLink(destination: MajorView()){
                         VStack{
                             Image("major_header")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 150, height: 100)
+                            
                             Text("Major")
                             //change to modeseven
-                                .font(.title)
+                                .font(.modeSeven28)
                             //change to digigreen
-                                .foregroundColor(.green)
+                                .foregroundColor(.white)
+                            
+                            
                         }
+                        
+    
+                        
                         //change to D9D9D9
-                        .background(.gray)
+                        .background(Color(UIColor(hex: "#202020")!))                        .cornerRadius(10)
                     }
                 }
             }
