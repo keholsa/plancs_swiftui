@@ -10,6 +10,8 @@ import SwiftUI
 
 struct SelectionView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         
         NavigationView{
@@ -87,6 +89,17 @@ struct SelectionView: View {
             
             
         }
+
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button(action:{
+            presentationMode.wrappedValue.dismiss()
+        }, label:{
+            Text("<")
+                .font(.modeSeven36)
+                .foregroundColor(.digiGreen)
+        })
+        )
         
 
     }

@@ -37,102 +37,116 @@ struct SongView: View {
         return Array(index)
     }
     
+    
+    @Environment(\.presentationMode) var presentationMode
+
     @State var optionVal: String
     var body: some View {
         
-
         
-        VStack{
-            
-            Text("Music\nSuggestion")
-            //change to modeseven
-                .font(.modeSeven36)
-            //change to digigreen
-                .foregroundColor(.digiGreen)
-                .multilineTextAlignment(.center)
-            
+        NavigationView{
             VStack{
-                Text("Song of the Day")
-                    .foregroundColor(.white)
-                    .font(.modeSeven18)
+                
+                Text("Music\nSuggestion")
+                //change to modeseven
+                    .font(.modeSeven36)
+                //change to digigreen
+                    .foregroundColor(.digiGreen)
+                    .multilineTextAlignment(.center)
+                
+                VStack{
+                    Text("Song of the Day")
+                        .foregroundColor(.white)
+                        .font(.modeSeven18)
                     
-                HStack{
-                    Image("cd")
-
+                    HStack{
+                        Image("cd")
                         
-                    VStack{
-                        Image(test_popTrackImgArr[1])
-    
-                        Text(test_popTrackNameArr[1])
-                            .foregroundColor(.white)
-                            .font(.modeSeven18)
-                            .lineLimit(nil)
                         
+                        VStack{
+                            Image(test_popTrackImgArr[1])
+                            
+                            Text(test_popTrackNameArr[1])
+                                .foregroundColor(.white)
+                                .font(.modeSeven18)
+                                .lineLimit(nil)
+                            
+                        }
+                        
+                        // add image of genre from previous selection here:
+                        Image(optionVal)
                     }
-                    
-                    // add image of genre from previous selection here:
-                    Image(optionVal)
+                    .frame(width:350, height: 100)
                 }
-                .frame(width:350, height: 100)
-            }
-            .background(Color(UIColor(hex: "#202020")!))
-            .cornerRadius(10)
+                .background(Color(UIColor(hex: "#202020")!))
+                .cornerRadius(10)
                 //prob change with other elements
                 .padding(.bottom, 100)
                 .padding(.top, 50)
-            VStack{
-                Text("Popular Artists:")
-                    .foregroundColor(.white)
-                    .font(.modeSeven18)
-                ScrollView(.horizontal, showsIndicators: true){
-                    HStack{
-                        ForEach(randomIndex, id: \.self){ index in
-                            VStack{
-                                Image(test_popArtistImgArr[index])
+                VStack{
+                    Text("Popular Artists:")
+                        .foregroundColor(.white)
+                        .font(.modeSeven18)
+                    ScrollView(.horizontal, showsIndicators: true){
+                        HStack{
+                            ForEach(randomIndex, id: \.self){ index in
+                                VStack{
+                                    Image(test_popArtistImgArr[index])
+                                    
+                                    Text(test_popArtistNameArr[index])
+                                        .foregroundColor(.white)
+                                        .font(.modeSeven16)
+                                }
+                                .frame(width: 150, height: 150)
+                                .background(Color(UIColor(hex: "#202020")!))
+                                .cornerRadius(5)
                                 
-                                Text(test_popArtistNameArr[index])
-                                    .foregroundColor(.white)
-                                    .font(.modeSeven16)
                             }
-                            .frame(width: 150, height: 150)
-                            .background(Color(UIColor(hex: "#202020")!))
-                            .cornerRadius(5)
-                            
                         }
                     }
                 }
-            }
-            .padding(.top, -50)
-            
-            VStack{
-                Text("Trending Albums:")
-                    .foregroundColor(.white)
-                    .font(.modeSeven18)
+                .padding(.top, -50)
                 
-                ScrollView(.horizontal, showsIndicators: true){
-                    HStack{
-                        ForEach(randomIndex, id: \.self){ index in
-                            VStack{
-                                Image(test_popArtistImgArr[index])
-                                Text(test_popArtistNameArr[index])
-                                    .foregroundColor(.white)
-                                    .font(.modeSeven16)
+                VStack{
+                    Text("Trending Albums:")
+                        .foregroundColor(.white)
+                        .font(.modeSeven18)
+                    
+                    ScrollView(.horizontal, showsIndicators: true){
+                        HStack{
+                            ForEach(randomIndex, id: \.self){ index in
+                                VStack{
+                                    Image(test_popArtistImgArr[index])
+                                    Text(test_popArtistNameArr[index])
+                                        .foregroundColor(.white)
+                                        .font(.modeSeven16)
+                                }
+                                .frame(width: 150, height: 150)
+                                .background(Color(UIColor(hex: "#202020")!))
+                                .cornerRadius(5)
+                                
                             }
-                            .frame(width: 150, height: 150)
-                            .background(Color(UIColor(hex: "#202020")!))
-                            .cornerRadius(5)
-                            
                         }
                     }
+                    
+                    
                 }
-                
+                .padding(.top, 10)
                 
             }
-            .padding(.top, 10)
-
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button(action:{
+            presentationMode.wrappedValue.dismiss()
+        }, label:{
+            Text("<")
+                .font(.modeSeven36)
+                .foregroundColor(.digiGreen)
+        })
+        )
     }
 }
 

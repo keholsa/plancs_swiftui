@@ -10,6 +10,8 @@ import SwiftUI
 
 struct GenreView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+
     let genreNameArr = ["Classical", "Metal", "Country", "Rap", "Oldies", "EDM", "Pop", "Lo-Fi"]
     let genreImageArr = ["classical", "metal", "country", "rap", "oldies", "edm", "pop", "lofi"]
     
@@ -75,6 +77,16 @@ struct GenreView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button(action:{
+            presentationMode.wrappedValue.dismiss()
+        }, label:{
+            Text("<")
+                .font(.modeSeven36)
+                .foregroundColor(.digiGreen)
+        })
+        )
         
 
     }

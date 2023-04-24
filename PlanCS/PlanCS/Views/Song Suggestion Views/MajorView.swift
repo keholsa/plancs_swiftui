@@ -10,12 +10,14 @@ import SwiftUI
 
 struct MajorView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     let majorNameArr = ["Computer\nScience", "Electrical\nEngineering", "Computer\nEngineering", "Mechanical\nEngineering", "Math &\nPhysics", "Biology &\n Chemistry"]
     let majorImageArr = ["computer_science", "electrical_engineering", "computer_engineering", "mechanical_engineering", "math", "biology"]
     
     var body: some View {
         
-        NavigationStack{
+        NavigationView{
             VStack{
                 
                 Text("Music\nSuggestion")
@@ -74,7 +76,16 @@ struct MajorView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black)
         }
-        
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button(action:{
+            presentationMode.wrappedValue.dismiss()
+        }, label:{
+            Text("<")
+                .font(.modeSeven36)
+                .foregroundColor(.digiGreen)
+        })
+        )
     }
 }
     
