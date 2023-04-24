@@ -13,6 +13,7 @@ import Foundation
 struct SongView: View {
     
     
+    
 
     //demo line
     //let test = country_data.country_artist_names
@@ -37,7 +38,8 @@ struct SongView: View {
     }
     
     var randomSingleIndex = Int.random(in: 0..<country_data.country_artist_names.count)
-    
+
+            
     
     @Environment(\.presentationMode) var presentationMode
 
@@ -220,6 +222,36 @@ struct SongView: View {
                                             Text(rap_data.rap_artist_names[index])
                                                 .foregroundColor(.white)
                                                 .font(.modeSeven16)
+                                        case "computer_engineering":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 8)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                                        case "mechanical_engineering":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 8)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                                        case "computer_science":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 8)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                                        case "electircal_engineering":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 8)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                                        case "math":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 8)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                                        case "biology":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 8)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
                             
                                         default:
                                             Text("Error")
@@ -240,7 +272,7 @@ struct SongView: View {
                 .padding(.top, -50)
                 
                 VStack{
-                    Text("Trending Albums:")
+                    Text("Trending Trakcs:")
                         .foregroundColor(.white)
                         .font(.modeSeven18)
                     
@@ -292,6 +324,36 @@ struct SongView: View {
 
                                     case "rap":
                                         AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 5)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "computer_engineering":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 8)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "mechanical_engineering":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 8)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "computer_science":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 8)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "electircal_engineering":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 8)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "math":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 8)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "biology":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 8)
                                         Text(rap_data.rap_track_names[index])
                                             .foregroundColor(.white)
                                             .font(.modeSeven16)
@@ -369,6 +431,6 @@ extension UIColor {
 }
 struct SongView_Previews: PreviewProvider {
     static var previews: some View {
-        SongView(optionVal: "country")
+        SongView(optionVal: "computer_engineering")
     }
 }
