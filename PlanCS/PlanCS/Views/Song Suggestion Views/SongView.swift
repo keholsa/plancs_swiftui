@@ -8,6 +8,7 @@
 import SwiftUI
 import Foundation
 
+
 struct SongView: View {
     
     
@@ -17,6 +18,12 @@ struct SongView: View {
     let test_popTrackNameArr = ["Test Name1", "Test Name2", "Test Name3", "Test Name4", "Test Name5", "Test Name6", "Test Name7", "Test Name8"]
     let test_popTrackImgArr = ["classical", "metal", "country", "rap", "oldies", "edm", "pop", "lofi"]
     
+    var artistNameArr: [String] = []
+    var artistImgArr: [String] = []
+    var trackNameArr: [String] = []
+    var trackImgArr: [String] = []
+    //demo line
+    //let test = country_data.country_artist_names
 
     // random index function generator for song/artist selection
     var randomIndex: [Int]{
@@ -41,8 +48,55 @@ struct SongView: View {
     @Environment(\.presentationMode) var presentationMode
 
     @State var optionVal: String
+    
+    
     var body: some View {
-        
+    
+        switch optionVal {
+        case "country":
+            artistNameArr = country_data.country_artist_names
+            artistImgArr = country_data.country_artist_images
+            trackNameArr = country_data.country_track_names
+            trackImgArr = country_data.country_track_images
+        case "edm":
+            artistNameArr = edm_data.edm_artist_names
+            artistImgArr = edm_data.edm_artist_images
+            trackNameArr = edm_data.edm_track_names
+            trackImgArr = edm_data.edm_track_images
+        case "lofi":
+            artistNameArr = lofi_data.lofi_artist_names
+            artistImgArr = lofi_data.lofi_artist_images
+            trackNameArr = lofi_data.lofi_track_names
+            trackImgArr = lofi_data.lofi_track_images
+        case "classical":
+            artistNameArr = classical_data.classical_artist_names
+            artistImgArr = classical_data.classical_artist_images
+            trackNameArr = classical_data.classical_track_names
+            trackImgArr = classical_data.classical_track_images
+        case "metal":
+            artistNameArr = metal_data.metal_artist_names
+            artistImgArr = metal_data.metal_artist_images
+            trackNameArr = metal_data.metal_track_names
+            trackImgArr = metal_data.metal_track_images
+        case "oldies":
+            artistNameArr = oldies_data.oldies_artist_names
+            artistImgArr = oldies_data.oldies_artist_images
+            trackNameArr = oldies_data.oldies_track_names
+            trackImgArr = oldies_data.oldies_track_images
+        case "pop":
+            artistNameArr = pop_data.pop_artist_names
+            artistImgArr = pop_data.pop_artist_images
+            trackNameArr = pop_data.pop_track_names
+            trackImgArr = pop_data.pop_track_images
+        case "rap":
+            artistNameArr = rap_data.rap_artist_names
+            artistImgArr = rap_data.rap_artist_images
+            trackNameArr = rap_data.rap_track_names
+            trackImgArr = rap_data.rap_track_images
+            
+        //default:
+            //not sure what goes here
+        }
         
         NavigationView{
             VStack{
