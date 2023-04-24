@@ -9,19 +9,11 @@ import SwiftUI
 import Foundation
 
 
+
 struct SongView: View {
     
     
-    // testing data for form
-    let test_popArtistNameArr = ["Test Name1", "Test Name2", "Test Name3", "Test Name4", "Test Name5", "Test Name6", "Test Name7", "Test Name8"]
-    let test_popArtistImgArr = ["classical", "metal", "country", "rap", "oldies", "edm", "pop", "lofi"]
-    let test_popTrackNameArr = ["Test Name1", "Test Name2", "Test Name3", "Test Name4", "Test Name5", "Test Name6", "Test Name7", "Test Name8"]
-    let test_popTrackImgArr = ["classical", "metal", "country", "rap", "oldies", "edm", "pop", "lofi"]
-    
-    var artistNameArr: [String] = []
-    var artistImgArr: [String] = []
-    var trackNameArr: [String] = []
-    var trackImgArr: [String] = []
+
     //demo line
     //let test = country_data.country_artist_names
 
@@ -36,7 +28,7 @@ struct SongView: View {
             
             // selecting indexes based off incoming array size and picking a new index
             //TODO: change test_popArtistName to an incoming array depedent on selection
-            index.insert(test_popArtistNameArr.indices.randomElement()!)
+            index.insert(country_data.country_artist_names.indices.randomElement()!)
                 
         }
         
@@ -44,59 +36,16 @@ struct SongView: View {
         return Array(index)
     }
     
+    var randomSingleIndex = Int.random(in: 0..<country_data.country_artist_names.count)
+    
     
     @Environment(\.presentationMode) var presentationMode
 
     @State var optionVal: String
-    
-    
+
+
     var body: some View {
     
-        switch optionVal {
-        case "country":
-            artistNameArr = country_data.country_artist_names
-            artistImgArr = country_data.country_artist_images
-            trackNameArr = country_data.country_track_names
-            trackImgArr = country_data.country_track_images
-        case "edm":
-            artistNameArr = edm_data.edm_artist_names
-            artistImgArr = edm_data.edm_artist_images
-            trackNameArr = edm_data.edm_track_names
-            trackImgArr = edm_data.edm_track_images
-        case "lofi":
-            artistNameArr = lofi_data.lofi_artist_names
-            artistImgArr = lofi_data.lofi_artist_images
-            trackNameArr = lofi_data.lofi_track_names
-            trackImgArr = lofi_data.lofi_track_images
-        case "classical":
-            artistNameArr = classical_data.classical_artist_names
-            artistImgArr = classical_data.classical_artist_images
-            trackNameArr = classical_data.classical_track_names
-            trackImgArr = classical_data.classical_track_images
-        case "metal":
-            artistNameArr = metal_data.metal_artist_names
-            artistImgArr = metal_data.metal_artist_images
-            trackNameArr = metal_data.metal_track_names
-            trackImgArr = metal_data.metal_track_images
-        case "oldies":
-            artistNameArr = oldies_data.oldies_artist_names
-            artistImgArr = oldies_data.oldies_artist_images
-            trackNameArr = oldies_data.oldies_track_names
-            trackImgArr = oldies_data.oldies_track_images
-        case "pop":
-            artistNameArr = pop_data.pop_artist_names
-            artistImgArr = pop_data.pop_artist_images
-            trackNameArr = pop_data.pop_track_names
-            trackImgArr = pop_data.pop_track_images
-        case "rap":
-            artistNameArr = rap_data.rap_artist_names
-            artistImgArr = rap_data.rap_artist_images
-            trackNameArr = rap_data.rap_track_names
-            trackImgArr = rap_data.rap_track_images
-            
-        //default:
-            //not sure what goes here
-        }
         
         NavigationView{
             VStack{
@@ -118,17 +67,96 @@ struct SongView: View {
                         
                         
                         VStack{
-                            Image(test_popTrackImgArr[1])
                             
-                            Text(test_popTrackNameArr[1])
-                                .foregroundColor(.white)
-                                .font(.modeSeven18)
-                                .lineLimit(nil)
+                            switch optionVal {
+                            case "country":
+                                AsyncImage(url: URL(string: country_data.country_track_images[randomSingleIndex]), scale: 8)
+                                Text(country_data.country_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                            case "edm":
+                                AsyncImage(url: URL(string: edm_data.edm_track_images[randomSingleIndex]), scale: 8)
+                                Text(edm_data.edm_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            case "lofi":
+                                AsyncImage(url: URL(string: lofi_data.lofi_track_images[randomSingleIndex]), scale: 8)
+                                Text(lofi_data.lofi_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            case "classical":
+                                AsyncImage(url: URL(string: classical_data.classical_track_images[randomSingleIndex]), scale: 8)
+                                Text(classical_data.classical_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            case "metal":
+                                AsyncImage(url: URL(string: metal_data.metal_track_images[randomSingleIndex]), scale: 8)
+                                Text(metal_data.metal_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            case "oldies":
+                                AsyncImage(url: URL(string: oldies_data.oldies_track_images[randomSingleIndex]), scale: 8)
+                                Text(oldies_data.oldies_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            case "pop":
+                                AsyncImage(url: URL(string: pop_data.pop_track_images[randomSingleIndex]), scale: 8)
+                                Text(pop_data.pop_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            case "rap":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                                
+                            case "computer_engineering":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                            case "mechanical_engineering":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                            case "computer_science":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                            case "electircal_engineering":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                            case "math":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+                            case "biology":
+                                AsyncImage(url: URL(string: rap_data.rap_track_images[randomSingleIndex]), scale: 8)
+                                Text(rap_data.rap_track_names[randomSingleIndex])
+                                    .foregroundColor(.white)
+                                    .font(.modeSeven16)
+
+                            default:
+                                Text("Error")
+ 
+                            }
                             
                         }
                         
                         // add image of genre from previous selection here:
                         Image(optionVal)
+                        
                     }
                     .frame(width:350, height: 100)
                 }
@@ -145,11 +173,61 @@ struct SongView: View {
                         HStack{
                             ForEach(randomIndex, id: \.self){ index in
                                 VStack{
-                                    Image(test_popArtistImgArr[index])
+                                        switch optionVal {
+                                        case "country":
+                                            AsyncImage(url: URL(string: country_data.country_artist_images[index]), scale: 5)
+                                            Text(country_data.country_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                                        case "edm":
+                                            AsyncImage(url: URL(string: edm_data.edm_artist_images[index]), scale: 5)
+                                            Text(edm_data.edm_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                        
+                                        case "lofi":
+                                            AsyncImage(url: URL(string: lofi_data.lofi_artist_images[index]), scale: 5)
+                                            Text(lofi_data.lofi_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+
+                                        case "classical":
+                                            AsyncImage(url: URL(string: classical_data.classical_artist_images[index]), scale: 5)
+                                            Text(classical_data.classical_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+
+                                        case "metal":
+                                            AsyncImage(url: URL(string: metal_data.metal_artist_images[index]), scale: 5)
+                                            Text(metal_data.metal_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+
+                                        case "oldies":
+                                            AsyncImage(url: URL(string: oldies_data.oldies_artist_images[index]), scale: 5)
+                                            Text(oldies_data.oldies_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+
+                                        case "pop":
+                                            AsyncImage(url: URL(string: pop_data.pop_artist_images[index]), scale: 5)
+                                            Text(pop_data.pop_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+
+                                        case "rap":
+                                            AsyncImage(url: URL(string: rap_data.rap_artist_images[index]), scale: 5)
+                                            Text(rap_data.rap_artist_names[index])
+                                                .foregroundColor(.white)
+                                                .font(.modeSeven16)
+                            
+                                        default:
+                                            Text("Error")
+                                        }
                                     
-                                    Text(test_popArtistNameArr[index])
-                                        .foregroundColor(.white)
-                                        .font(.modeSeven16)
+                                    
+                                    
+                       
                                 }
                                 .frame(width: 150, height: 150)
                                 .background(Color(UIColor(hex: "#202020")!))
@@ -170,10 +248,57 @@ struct SongView: View {
                         HStack{
                             ForEach(randomIndex, id: \.self){ index in
                                 VStack{
-                                    Image(test_popArtistImgArr[index])
-                                    Text(test_popArtistNameArr[index])
-                                        .foregroundColor(.white)
-                                        .font(.modeSeven16)
+                                    switch optionVal {
+                                    case "country":
+                                        AsyncImage(url: URL(string: country_data.country_track_images[index]), scale: 5)
+                                        Text(country_data.country_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                                    case "edm":
+                                        AsyncImage(url: URL(string: edm_data.edm_track_images[index]), scale: 5)
+                                        Text(edm_data.edm_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                    
+                                    case "lofi":
+                                        AsyncImage(url: URL(string: lofi_data.lofi_track_images[index]), scale: 5)
+                                        Text(lofi_data.lofi_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+
+                                    case "classical":
+                                        AsyncImage(url: URL(string: classical_data.classical_track_images[index]), scale: 5)
+                                        Text(classical_data.classical_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+
+                                    case "metal":
+                                        AsyncImage(url: URL(string: metal_data.metal_track_images[index]), scale: 5)
+                                        Text(metal_data.metal_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+
+                                    case "oldies":
+                                        AsyncImage(url: URL(string: oldies_data.oldies_track_images[index]), scale: 5)
+                                        Text(oldies_data.oldies_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+
+                                    case "pop":
+                                        AsyncImage(url: URL(string: pop_data.pop_track_images[index]), scale: 5)
+                                        Text(pop_data.pop_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+
+                                    case "rap":
+                                        AsyncImage(url: URL(string: rap_data.rap_track_images[index]), scale: 5)
+                                        Text(rap_data.rap_track_names[index])
+                                            .foregroundColor(.white)
+                                            .font(.modeSeven16)
+                        
+                                    default:
+                                        Text("Error")
+                                    }
                                 }
                                 .frame(width: 150, height: 150)
                                 .background(Color(UIColor(hex: "#202020")!))
@@ -202,6 +327,7 @@ struct SongView: View {
         })
         )
     }
+    
 }
 
 
@@ -243,6 +369,6 @@ extension UIColor {
 }
 struct SongView_Previews: PreviewProvider {
     static var previews: some View {
-        SongView(optionVal: "computer_engineering")
+        SongView(optionVal: "country")
     }
 }

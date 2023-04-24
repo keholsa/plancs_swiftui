@@ -5,8 +5,10 @@
 //  Created by user234326 on 4/23/23.
 //
 import Foundation
+import SwiftUI
 
-public struct country_data{
+
+struct country_data{
 
 public static let country_artist_names = [ "Morgan Wallen", "Luke Combs", "Zach Bryan", "Creedence Clearwater Revival", "Chris Stapleton", "Luke Bryan", "Tyler Childers", "HARDY", "Florida Georgia Line", "Kelsea Ballerini", "Kane Brown", "Jordan Davis", "Johnny Cash", "Jason Aldean", "Eric Church", "Jon Pardi", "Thomas Rhett", "Jelly Roll", "Dan + Shay", "Shania Twain", "George Strait", "Zac Brown Band", "Cody Johnson", "Carrie Underwood", "Alan Jackson", "Maren Morris", "Kenny Chesney", "Miranda Lambert", "Sam Hunt", "Tim McGraw", "Lainey Wilson", "Willie Nelson", "Lee Brice", "Blake Shelton", "Upchurch", "Brooks & Dunn", "Keith Urban", "Old Dominion", "Dierks Bentley", "Koe Wetzel", "Cole Swindell", "Toby Keith", "Chris Young", "Parker McCollum", "Dustin Lynch", "Kacey Musgraves", "Rascal Flatts", "Riley Green", "Brantley Gilbert", "Billy Currington" ]
 
